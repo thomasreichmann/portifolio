@@ -1,15 +1,24 @@
 .Header {
 	height: 10%;
 	margin-bottom: 3.5em;
-}
 
-.Header h2 {
-	color: var(--header);
-}
+	a {
+		text-decoration: none;
+		color: currentColor;
+		padding: 2px 5px 5px;
+		display: inline-block;
+	}
 
-.Header a {
-	text-decoration: none;
-	color: currentColor;
-	padding: 2px 5px 5px;
-	display: inline-block;
+	h2 {
+		color: var(--header);
+	}
+
+	.top-header {
+		display: flex;
+		align-items: center;
+	}
+
+	.top-header :last-child {
+		margin: 0 28px 0 auto;
+	}
 }
