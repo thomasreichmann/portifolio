@@ -3,11 +3,12 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from './home/Home';
 import Projects from './projects/Projects';
-import NavBar from './navBar/NavBar';
+import NavBar from './generics/navBar/NavBar';
 import { IntlProvider } from 'react-intl';
 
 import en from './translation/en.json';
 import pt from './translation/pt.json';
+import Header from './generics/header/Header';
 
 type Locale = 'pt' | 'en';
 
@@ -21,12 +22,7 @@ function App() {
 			<Router>
 				<div className="App">
 					{/* Header with title and nav buttons */}
-					<header className="App-header">
-						<h2>
-							<Link to="/">thomas reichmann</Link>
-						</h2>
-						<NavBar />
-					</header>
+					<Header />
 					{/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
 					<Switch>

@@ -3,7 +3,7 @@ import NavButton from './NavButton';
 
 function NavBar() {
 	return (
-		<nav>
+		<nav className="NavBar">
 			<NavButton to="/" root>
 				/home/
 			</NavButton>
