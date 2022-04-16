@@ -12,7 +12,7 @@ import pt from './translation/pt.json';
 type Locale = 'pt' | 'en';
 
 function App() {
-	const [locale, setLocale] = React.useState<Locale>('pt');
+	const [locale, setLocale] = React.useState<Locale>('en');
 
 	const messages = { en, pt };
 

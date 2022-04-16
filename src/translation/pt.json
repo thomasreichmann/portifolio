@@ -1,4 +1,4 @@
 {
-	"GREETING": "HELLO THERE",
-	"HOME_HEADER": "hello there!"
+	"HOME_HEADER": "e ai!",
+	"HOME_CONTENT": "{age} anos 👦 {br}full stack developer {br}trabalhando de São Paulo na {currentCompany}"
 }
