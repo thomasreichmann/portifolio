@@ -4,6 +4,7 @@
 	--link-active: #ff6f61;
 	--link-hover: #195190;
 	--link-click: #009499;
+	--language-background: #1e2645;
 }
 
 ::selection {
@@ -25,39 +26,4 @@ body {
 .App-nav {
 	display: flex;
 	flex-direction: row;
-}
-
-.App-header {
-	height: 10%;
-	margin-bottom: 3.5em;
-}
-
-.App-header h2 {
-	color: var(--header);
-}
-
-.App-header a {
-	text-decoration: none;
-	color: currentColor;
-	padding: 2px 5px 5px;
-	display: inline-block;
-}
-
-.App-header nav a:not(:first-child) {
-	margin-left: 1.5em;
-}
-
-.App-header nav a:not(.App-nav-active):hover {
-	background: var(--link-hover);
-}
-
-.App-header nav a:not(.App-nav-active):active {
-	background: var(--link-click);
-	-webkit-transform: scale(1.05);
-	transform: scale(1.05);
-}
-
-.App-header .App-nav-active {
-	color: #000;
-	background: var(--link-active);
 }

@@ -1,0 +1,6 @@
+{
+	"HOME_HEADER": "hello there!",
+	"HOME_CONTENT": "{age} years 👦 {br}full stack developer {br}working from São Paulo at {currentCompany}",
+	"NAV_HOME": "home",
+	"NAV_PROJECTS": "projects"
+}

@@ -1,3 +1,4 @@
+import { FormattedMessage } from 'react-intl';
 import ExternalLink from '../generics/externalLink/ExternalLink';
 
 export default function Home() {
@@ -5,14 +6,18 @@ export default function Home() {
 
 	return (
 		<main>
-			<h1>e ai</h1>
+			<h1>
+				<FormattedMessage id="HOME_HEADER" />
+			</h1>
 			<p style={{ lineHeight: 1.85 }}>
-				{age} anos 👦
-				<br />
-				full stack developer
-				<br />
-				trabalhando de São Paulo na <ExternalLink to="https://unike.tech/">unike.TECH</ExternalLink>
-				<br />
+				<FormattedMessage
+					id="HOME_CONTENT"
+					values={{
+						age,
+						currentCompany: <ExternalLink to="https://unike.tech/">unike.TECH</ExternalLink>,
+						br: <br />,
+					}}
+				/>
 			</p>
 			<br />
 			<p>email: thomasalmeidar@gmail.com</p>
