@@ -1,0 +1,22 @@
+.MultiSelectButton {
+	// Removes all button styles
+	button {
+		all: unset;
+	}
+
+	background-color: var(--language-background);
+
+	// Custom button styles
+	button {
+		padding: 10px;
+	}
+
+	button:hover {
+		background-color: var(--link-hover);
+	}
+
+	button.active {
+		background-color: var(--link-active);
+		color: #000;
+	}
+}
