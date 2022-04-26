@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './home/Home';
 import Projects from './projects/Projects';
 import { IntlProvider } from 'react-intl';
@@ -26,18 +26,11 @@ function App() {
 		<IntlProvider locale={locale} messages={messages[locale]}>
 			<Router>
 				<div className="App">
-					{/* Header with title and nav buttons */}
 					<Header onLocaleChanged={handleLocaleChange} />
-					{/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-					<Switch>
-						<Route path="/projects">
-							<Projects />
-						</Route>
-						<Route path="/">
-							<Home />
-						</Route>
-					</Switch>
+					<Routes>
+						<Route path="/projects" element={<Projects />} />
+						<Route path="/" element={<Home />} />
+					</Routes>
 				</div>
 			</Router>
 		</IntlProvider>

@@ -13,18 +13,17 @@ function NavButton(props: NavButtonProps) {
 			{props.root ? (
 				<NavLink
 					to={props.to}
-					activeClassName="App-nav-active"
-					isActive={(match, location) => {
-						if (!match) return false;
-						if (location.pathname === '/') return true;
+					className={({ isActive }) => {
+						if (!isActive) return 'inactive';
+						if (window.location.pathname === '/') return 'App-nav-active';
 
-						return false;
+						return 'inactive';
 					}}
 				>
 					{props.children}
 				</NavLink>
 			) : (
-				<NavLink to={props.to} activeClassName="App-nav-active">
+				<NavLink to={props.to} className={({ isActive }) => (isActive ? 'App-nav-active' : 'inactive')}>
 					{props.children}
 				</NavLink>
 			)}
