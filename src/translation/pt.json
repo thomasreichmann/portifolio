@@ -2,5 +2,9 @@
 	"HOME_HEADER": "e ai!",
 	"HOME_CONTENT": "{age} anos 👦 {br}full stack developer {br}trabalhando de São Paulo na {currentCompany}",
 	"NAV_HOME": "home",
-	"NAV_PROJECTS": "projetos"
+	"NAV_PROJECTS": "projetos",
+	"PROJECTS_HEADER": "projetos",
+	"PROJECTS_TITLE": "lista dos projetos que eu desenvolvi",
+	"PROJECTS_PORTIFOLIO_CONTENT": "descrição temporária para o projeto portifólio",
+	"PROJECTS_BOT_TEMPLATE_CONTENT": "descrição temporária para o discord bot template"
 }

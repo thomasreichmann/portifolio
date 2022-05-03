@@ -2,5 +2,9 @@
 	"HOME_HEADER": "hello there!",
 	"HOME_CONTENT": "{age} years 👦 {br}full stack developer {br}working from São Paulo at {currentCompany}",
 	"NAV_HOME": "home",
-	"NAV_PROJECTS": "projects"
+	"NAV_PROJECTS": "projects",
+	"PROJECTS_HEADER": "projects",
+	"PROJECTS_TITLE": "list of projects i've worked on",
+	"PROJECTS_PORTIFOLIO_CONTENT": "temporary content for the portifolio description",
+	"PROJECTS_BOT_TEMPLATE_CONTENT": "temporary content for the discord bot tempalte"
 }
